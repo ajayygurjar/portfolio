@@ -1,0 +1,62 @@
+.section {
+  padding: var(--section-py) var(--section-px);
+}
+
+.inner {
+  max-width: 700px;
+}
+
+.intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+  opacity: 0.8;
+  margin-bottom: 3rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.linkRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.4rem;
+  cursor: pointer;
+  transition: border-color 0.25s ease, transform 0.2s ease;
+}
+
+.linkLabel {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.linkValue {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.location {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 480px) {
+  .linkRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
